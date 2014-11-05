@@ -44,7 +44,7 @@
 
 -(IBAction)Send:(UIButton *)sender
 {
-    if([_textField.text  isEqual: @""])
+    if([_textField.text isEqual: @""])
         return;
     self.mapView.userTrackingMode=NO;
     id newBubble = [[Bubble alloc] initWithTitle:_textField.text AndCoordinate:self.mapView.userLocation.location.coordinate];
