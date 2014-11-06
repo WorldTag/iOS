@@ -17,9 +17,12 @@
 
 @implementation ViewController
 @synthesize mapView = _mapView;
+<<<<<<< HEAD
 @synthesize selectedAnnotationView = selectedAnnotationView;
 //@synthesize customAnnotation = customAnnotation;
 
+=======
+>>>>>>> FETCH_HEAD
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,7 +50,11 @@
 
 -(IBAction)Send:(UIButton *)sender
 {
+<<<<<<< HEAD
     if([_textField.text isEqual: @""])
+=======
+    if([_textField.text  isEqual: @""])
+>>>>>>> FETCH_HEAD
         return;
     self.mapView.userTrackingMode=NO;
     id newBubble = [[Bubble alloc] initWithTitle:_textField.text AndCoordinate:self.mapView.userLocation.location.coordinate];

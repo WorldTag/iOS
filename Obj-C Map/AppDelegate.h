@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+<<<<<<< HEAD
 @class MapViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
@@ -17,6 +18,11 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, retain) IBOutlet UIViewController *viewController;
+=======
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+>>>>>>> FETCH_HEAD
 
 
 @end
