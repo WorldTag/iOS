@@ -17,6 +17,9 @@
 
 @implementation ViewController
 @synthesize mapView = _mapView;
+@synthesize selectedAnnotationView = selectedAnnotationView;
+//@synthesize customAnnotation = customAnnotation;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
