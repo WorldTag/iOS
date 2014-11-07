@@ -60,7 +60,6 @@
     if([_textField.text  isEqual: @""])
         return;
     self.mapView.userTrackingMode=NO;
-    
     self.customAnnotation = [[Bubble alloc] initWithTitle:_textField.text AndCoordinate:self.mapView.userLocation.location.coordinate];
     self.normalAnnotation = [[Bubble alloc] initWithTitle:_textField.text AndCoordinate:self.mapView.userLocation.location.coordinate];
     _textField.text = @"";
@@ -100,10 +99,8 @@
         if(!calloutMapAnnotationView) {
             calloutMapAnnotationView = [[CalloutMapAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CalloutAnnotation"];
             calloutMapAnnotationView.contentHeight = 78.0f;
-            UIImage *asynchronyLogo = [UIImage imageNamed:@"asynchrony-logo-small.png"];
-            UIImageView *asynchronyLogoView = [[UIImageView alloc] initWithImage:asynchronyLogo];
-            asynchronyLogoView.frame = CGRectMake(5, 2, asynchronyLogoView.frame.size.width, asynchronyLogoView.frame.size.height);
-            [calloutMapAnnotationView.contentView addSubview:asynchronyLogoView];
+//add subview?
+            
         }
         calloutMapAnnotationView.parentAnnotationView = self.selectedAnnotationView;
         calloutMapAnnotationView.mapView = self.mapView;

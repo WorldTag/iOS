@@ -10,6 +10,7 @@
 		C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EF3491A02025C0059FF02 /* Bubble.m */; };
 		C6202B2E1A098E7B003B7349 /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6202B2D1A098E7B003B7349 /* CalloutMapAnnotation.m */; };
 		C6202B311A09A31C003B7349 /* CalloutMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6202B301A09A31C003B7349 /* CalloutMapAnnotationView.m */; };
+		C65A719F1A0C571F008A9766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C65A719E1A0C571F008A9766 /* Info.plist */; };
 		C6703EA019F883D40082D1C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703E9F19F883D40082D1C7 /* main.m */; };
 		C6703EA319F883D40082D1C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA219F883D40082D1C7 /* AppDelegate.m */; };
 		C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA519F883D40082D1C7 /* MapViewController.m */; };
@@ -36,8 +37,8 @@
 		C6202B2D1A098E7B003B7349 /* CalloutMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotation.m; sourceTree = "<group>"; };
 		C6202B2F1A09A310003B7349 /* CalloutMapAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotationView.h; sourceTree = "<group>"; };
 		C6202B301A09A31C003B7349 /* CalloutMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotationView.m; sourceTree = "<group>"; };
+		C65A719E1A0C571F008A9766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6703E9A19F883D40082D1C7 /* Obj-C Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obj-C Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6703E9E19F883D40082D1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6703E9F19F883D40082D1C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6703EA119F883D40082D1C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6703EA219F883D40082D1C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,8 +112,8 @@
 		C6703E9D19F883D40082D1C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C6703E9E19F883D40082D1C7 /* Info.plist */,
 				C6703E9F19F883D40082D1C7 /* main.m */,
+				C65A719E1A0C571F008A9766 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65A719F1A0C571F008A9766 /* Info.plist in Resources */,
 				C6703EA919F883D40082D1C7 /* Main.storyboard in Resources */,
 				C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */,
 				C6703EAB19F883D40082D1C7 /* Images.xcassets in Resources */,
