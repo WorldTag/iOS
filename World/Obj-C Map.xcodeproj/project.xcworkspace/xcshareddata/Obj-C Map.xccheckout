@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9445255F-F691-48BA-9EE4-31CCD81C9F3F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Obj-C Map</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</key>
+		<string>github.com:WorldTag/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>World/Obj-C Map.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:WorldTag/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WorldTagIOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
