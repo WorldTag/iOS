@@ -5,6 +5,7 @@
 //  Created by Brendan McMorrow on 11/8/14.
 //  Copyright (c) 2014 Loki. All rights reserved.
 //
+#import <MapKit/MapKit.h>
 #import <UIKit/UIKit.h>
 enum {
     SMCalloutArrowDirectionUp = 1UL << 0,
