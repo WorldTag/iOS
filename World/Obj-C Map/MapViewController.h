@@ -8,15 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "CalloutMapAnnotation.h"
 #import "Bubble.h"
 
 @interface ViewController : UIViewController <MKMapViewDelegate> {
     MKMapView *mapView;
-    CalloutMapAnnotation *calloutAnnotation;
     MKAnnotationView *selectedAnnotationView;
     Bubble *customAnnotation;
-    Bubble *normalAnnotation;
     
 }
 

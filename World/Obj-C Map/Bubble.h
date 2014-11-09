@@ -9,12 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface Bubble : NSObject <MKAnnotation> {
-    CLLocationCoordinate2D _coordinate;
-    NSString *_title;
-}
+@interface Bubble : NSObject <MKAnnotation>
 
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *text;
 
 
 

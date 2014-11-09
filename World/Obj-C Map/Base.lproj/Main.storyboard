@@ -24,6 +24,9 @@
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4by-LD-SBe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="CGi-3I-YOo"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZM-Vb-FhE">
                                 <rect key="frame" x="548" y="569" width="36" height="30"/>

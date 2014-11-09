@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EF3491A02025C0059FF02 /* Bubble.m */; };
-		C6202B2E1A098E7B003B7349 /* CalloutMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6202B2D1A098E7B003B7349 /* CalloutMapAnnotation.m */; };
-		C6202B311A09A31C003B7349 /* CalloutMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6202B301A09A31C003B7349 /* CalloutMapAnnotationView.m */; };
-		C65A719F1A0C571F008A9766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C65A719E1A0C571F008A9766 /* Info.plist */; };
+		C65A71A11A0C58E8008A9766 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65A71A01A0C58E8008A9766 /* Default-568h@2x.png */; };
+		C65A71A31A0C5ACD008A9766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C65A71A21A0C5ACD008A9766 /* Info.plist */; };
 		C6703EA019F883D40082D1C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703E9F19F883D40082D1C7 /* main.m */; };
 		C6703EA319F883D40082D1C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA219F883D40082D1C7 /* AppDelegate.m */; };
 		C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA519F883D40082D1C7 /* MapViewController.m */; };
@@ -18,6 +17,7 @@
 		C6703EAB19F883D40082D1C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6703EAA19F883D40082D1C7 /* Images.xcassets */; };
 		C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6703EAC19F883D40082D1C7 /* LaunchScreen.xib */; };
 		C6703EC419F8854B0082D1C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6703EC319F8854B0082D1C7 /* MapKit.framework */; };
+		C6D438561A0EECC1005B525C /* CalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D438551A0EECC1005B525C /* CalloutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +33,8 @@
 /* Begin PBXFileReference section */
 		C61EF3491A02025C0059FF02 /* Bubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bubble.m; sourceTree = "<group>"; };
 		C61EF34B1A02026A0059FF02 /* Bubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bubble.h; sourceTree = "<group>"; };
-		C6202B2C1A098D81003B7349 /* CalloutMapAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotation.h; sourceTree = "<group>"; };
-		C6202B2D1A098E7B003B7349 /* CalloutMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotation.m; sourceTree = "<group>"; };
-		C6202B2F1A09A310003B7349 /* CalloutMapAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalloutMapAnnotationView.h; sourceTree = "<group>"; };
-		C6202B301A09A31C003B7349 /* CalloutMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutMapAnnotationView.m; sourceTree = "<group>"; };
-		C65A719E1A0C571F008A9766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C65A71A01A0C58E8008A9766 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C65A71A21A0C5ACD008A9766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6703E9A19F883D40082D1C7 /* Obj-C Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obj-C Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6703E9F19F883D40082D1C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6703EA119F883D40082D1C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +46,8 @@
 		C6703EAD19F883D40082D1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C6703EB319F883D40082D1C7 /* Obj-C MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obj-C MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6703EC319F8854B0082D1C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C6D438541A0EECBA005B525C /* CalloutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalloutView.h; sourceTree = "<group>"; };
+		C6D438551A0EECC1005B525C /* CalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +72,7 @@
 		C6703E9119F883D40082D1C7 = {
 			isa = PBXGroup;
 			children = (
+				C65A71A01A0C58E8008A9766 /* Default-568h@2x.png */,
 				C6703EC319F8854B0082D1C7 /* MapKit.framework */,
 				C6703E9C19F883D40082D1C7 /* Obj-C Map */,
 				C6703E9B19F883D40082D1C7 /* Products */,
@@ -95,12 +95,10 @@
 				C6703EA219F883D40082D1C7 /* AppDelegate.m */,
 				C6703EA419F883D40082D1C7 /* MapViewController.h */,
 				C6703EA519F883D40082D1C7 /* MapViewController.m */,
-				C6202B2C1A098D81003B7349 /* CalloutMapAnnotation.h */,
-				C6202B2D1A098E7B003B7349 /* CalloutMapAnnotation.m */,
+				C6D438541A0EECBA005B525C /* CalloutView.h */,
+				C6D438551A0EECC1005B525C /* CalloutView.m */,
 				C61EF34B1A02026A0059FF02 /* Bubble.h */,
 				C61EF3491A02025C0059FF02 /* Bubble.m */,
-				C6202B2F1A09A310003B7349 /* CalloutMapAnnotationView.h */,
-				C6202B301A09A31C003B7349 /* CalloutMapAnnotationView.m */,
 				C6703EA719F883D40082D1C7 /* Main.storyboard */,
 				C6703EAA19F883D40082D1C7 /* Images.xcassets */,
 				C6703EAC19F883D40082D1C7 /* LaunchScreen.xib */,
@@ -112,8 +110,8 @@
 		C6703E9D19F883D40082D1C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C65A71A21A0C5ACD008A9766 /* Info.plist */,
 				C6703E9F19F883D40082D1C7 /* main.m */,
-				C65A719E1A0C571F008A9766 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -198,9 +196,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C65A719F1A0C571F008A9766 /* Info.plist in Resources */,
 				C6703EA919F883D40082D1C7 /* Main.storyboard in Resources */,
 				C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */,
+				C65A71A11A0C58E8008A9766 /* Default-568h@2x.png in Resources */,
+				C65A71A31A0C5ACD008A9766 /* Info.plist in Resources */,
 				C6703EAB19F883D40082D1C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,12 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6202B2E1A098E7B003B7349 /* CalloutMapAnnotation.m in Sources */,
+				C6D438561A0EECC1005B525C /* CalloutView.m in Sources */,
 				C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */,
 				C6703EA319F883D40082D1C7 /* AppDelegate.m in Sources */,
 				C6703EA019F883D40082D1C7 /* main.m in Sources */,
 				C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */,
-				C6202B311A09A31C003B7349 /* CalloutMapAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
