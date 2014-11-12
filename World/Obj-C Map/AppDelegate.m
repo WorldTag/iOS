@@ -21,6 +21,7 @@
 static LocationManager *locationManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     locationManager = [[LocationManager alloc] init];
     return YES;
 }
