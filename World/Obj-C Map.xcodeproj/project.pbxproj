@@ -9,15 +9,13 @@
 /* Begin PBXBuildFile section */
 		C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EF3491A02025C0059FF02 /* Bubble.m */; };
 		C65A71A11A0C58E8008A9766 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65A71A01A0C58E8008A9766 /* Default-568h@2x.png */; };
-		C65A71A31A0C5ACD008A9766 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C65A71A21A0C5ACD008A9766 /* Info.plist */; };
 		C6703EA019F883D40082D1C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703E9F19F883D40082D1C7 /* main.m */; };
-		C6703EA319F883D40082D1C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA219F883D40082D1C7 /* AppDelegate.m */; };
 		C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA519F883D40082D1C7 /* MapViewController.m */; };
 		C6703EA919F883D40082D1C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6703EA719F883D40082D1C7 /* Main.storyboard */; };
 		C6703EAB19F883D40082D1C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6703EAA19F883D40082D1C7 /* Images.xcassets */; };
 		C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6703EAC19F883D40082D1C7 /* LaunchScreen.xib */; };
 		C6703EC419F8854B0082D1C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6703EC319F8854B0082D1C7 /* MapKit.framework */; };
-		C6D438561A0EECC1005B525C /* CalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D438551A0EECC1005B525C /* CalloutView.m */; };
+		C6AB70DF1A12F7A200380001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AB70DE1A12F7A200380001 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +35,6 @@
 		C65A71A21A0C5ACD008A9766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6703E9A19F883D40082D1C7 /* Obj-C Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obj-C Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6703E9F19F883D40082D1C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C6703EA119F883D40082D1C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C6703EA219F883D40082D1C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C6703EA419F883D40082D1C7 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		C6703EA519F883D40082D1C7 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C6703EA819F883D40082D1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,8 +42,8 @@
 		C6703EAD19F883D40082D1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C6703EB319F883D40082D1C7 /* Obj-C MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obj-C MapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6703EC319F8854B0082D1C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		C6D438541A0EECBA005B525C /* CalloutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalloutView.h; sourceTree = "<group>"; };
-		C6D438551A0EECC1005B525C /* CalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutView.m; sourceTree = "<group>"; };
+		C6AB70DD1A12F7A200380001 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6AB70DE1A12F7A200380001 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +87,10 @@
 		C6703E9C19F883D40082D1C7 /* Obj-C Map */ = {
 			isa = PBXGroup;
 			children = (
-				C6703EA119F883D40082D1C7 /* AppDelegate.h */,
-				C6703EA219F883D40082D1C7 /* AppDelegate.m */,
+				C6AB70DD1A12F7A200380001 /* AppDelegate.h */,
+				C6AB70DE1A12F7A200380001 /* AppDelegate.m */,
 				C6703EA419F883D40082D1C7 /* MapViewController.h */,
 				C6703EA519F883D40082D1C7 /* MapViewController.m */,
-				C6D438541A0EECBA005B525C /* CalloutView.h */,
-				C6D438551A0EECC1005B525C /* CalloutView.m */,
 				C61EF34B1A02026A0059FF02 /* Bubble.h */,
 				C61EF3491A02025C0059FF02 /* Bubble.m */,
 				C6703EA719F883D40082D1C7 /* Main.storyboard */,
@@ -160,7 +154,7 @@
 		C6703E9219F883D40082D1C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Loki;
 				TargetAttributes = {
 					C6703E9919F883D40082D1C7 = {
@@ -199,7 +193,6 @@
 				C6703EA919F883D40082D1C7 /* Main.storyboard in Resources */,
 				C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */,
 				C65A71A11A0C58E8008A9766 /* Default-568h@2x.png in Resources */,
-				C65A71A31A0C5ACD008A9766 /* Info.plist in Resources */,
 				C6703EAB19F883D40082D1C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,11 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D438561A0EECC1005B525C /* CalloutView.m in Sources */,
 				C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */,
-				C6703EA319F883D40082D1C7 /* AppDelegate.m in Sources */,
 				C6703EA019F883D40082D1C7 /* main.m in Sources */,
 				C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */,
+				C6AB70DF1A12F7A200380001 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

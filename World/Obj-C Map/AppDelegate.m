@@ -13,13 +13,8 @@
 
 @implementation AppDelegate {
     UIScrollView *scrollView;
-    MKPinAnnotationView *topPin;
-    SMCalloutView *calloutView;
-    MKMapView *bottomMapView;
-    MKPinAnnotationView *bottomPin;
 }
 @synthesize window;
-@synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 

@@ -15,15 +15,11 @@
 
 @interface ViewController () <CLLocationManagerDelegate, UITextFieldDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;
-@property (nonatomic, retain) Bubble *customAnnotation;
-@property (nonatomic, retain) Bubble *normalAnnotation;
 @end
 
 @implementation ViewController
 @synthesize mapView = _mapView;
-@synthesize selectedAnnotationView = selectedAnnotationView;
-@synthesize customAnnotation = customAnnotation;
-@synthesize normalAnnotation = normalAnnotation;
+
 
 
 
@@ -46,13 +42,6 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-/*-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    CLLocationCoordinate2D loc = [userLocation coordinate];
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 250, 250);
-    [_mapView setRegion:region animated:YES];
-
-}*/
 
 -(IBAction)Send:(UIButton *)sender
 {

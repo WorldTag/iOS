@@ -7,16 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CalloutView.h"
-#import <MapKit/MapKit.h>
 
-@class MapViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, MKMapViewDelegate, SMCalloutViewDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, retain) IBOutlet UIViewController *viewController;
 
 
 

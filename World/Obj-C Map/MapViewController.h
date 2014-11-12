@@ -19,7 +19,6 @@
 
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) MKAnnotationView *selectedAnnotationView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
 
