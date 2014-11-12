@@ -7,3 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LocationManager.h"
+
+
+@interface LocationManager() <CLLocationManagerDelegate>
+@end
+
+
+@implementation LocationManager
+
+-(id)init {
+    self = [super init];
+    self.delegate = self;
+    if([self respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [self requestWhenInUseAuthorization];
+    }
+    [self startUpdatingLocation];
+    return self;
+}
+
+-(CLLocationCoordinate2D)getLocation {
+    return self.location.coordinate;
+}
+
+@end

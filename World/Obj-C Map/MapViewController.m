@@ -7,38 +7,27 @@
 //
 
 #import "MapViewController.h"
-#import "AppDelegate.h"
+#import "LocationManager.h"
 @import MapKit;
 @import UIKit;
 @import CoreLocation;
 
 @interface ViewController () <CLLocationManagerDelegate>
-@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) LocationManager *locationManager;
 @end
 
 @implementation ViewController
 @synthesize mapView = _mapView;
+@synthesize locationManager;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.mapView.delegate self];
     [self.mapView setShowsUserLocation:YES];
-        self.mapView.userTrackingMode=NO;
-    [self performSelector:@selector(updateRegion) withObject:self afterDelay:3.0 ];
-    [self updateRegion];
-
+    self.mapView.userTrackingMode=NO;
+    self.locationManager = [AppDelegate getLocationManager];
+    [self performSelector:@selector(updateRegion) withObject:self afterDelay:1.0 ];
     // Do any additional setup after loading the view, typically from a nib.
-}
-
--(void)startUpdatingLocation {
-    self.locationManager = [[CLLocationManager alloc]init];
-    self.locationManager.delegate = self;
-    //if(kCLAuthorizationStatusAuthorizedWhenInUse){
-    if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-        [self.locationManager requestWhenInUseAuthorization];
-    }
-    [self.locationManager startUpdatingLocation];
-
 }
 
 -(IBAction)Send:(UIButton *)sender
@@ -50,12 +39,11 @@
     _textField.text = @"";
     [self updateRegion];
     [self.mapView addAnnotation:tbub];
-    
 }
 
 -(void)updateRegion {
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.location.coordinate, 250, 250);
-    [self.mapView setRegion:region];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([self.locationManager getLocation], 200, 200);
+    [self.mapView setRegion:region animated:YES];
 }
 
 -(void) printSuccess {

@@ -13,10 +13,6 @@
 
 @property (nonatomic, copy) NSString *title;
 
-
-
 -(id) initWithTitle:(NSString *) title AndCoordinate:(CLLocationCoordinate2D)coordinate;
-
-
 
 @end//

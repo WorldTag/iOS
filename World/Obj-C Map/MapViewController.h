@@ -9,19 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Bubble.h"
+#import "AppDelegate.h"
+
 
 @interface ViewController : UIViewController <MKMapViewDelegate> {
     MKMapView *mapView;
     MKAnnotationView *selectedAnnotationView;    
 }
 
-
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
 
 - (IBAction)Send:(UIButton *)sender;
--(void)startUpdatingLocation;
--(void)updateRegion;
+
 @end
 

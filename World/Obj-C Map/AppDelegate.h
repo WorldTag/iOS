@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LocationManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
-
++(id)getLocationManager;
 
 @end
 
