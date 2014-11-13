@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C640AF61A1449BA00219D84 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C640AF51A1449BA00219D84 /* Icon-60@2x.png */; };
 		C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EF3491A02025C0059FF02 /* Bubble.m */; };
 		C628DCC61A14345000A97B21 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C628DCC51A14345000A97B21 /* ComposeViewController.m */; };
 		C65842881A1308F500A4CFB9 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C65842871A1308F500A4CFB9 /* LocationManager.m */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C640AF51A1449BA00219D84 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "../../../../Icon-60@2x.png"; sourceTree = "<group>"; };
 		C61EF3491A02025C0059FF02 /* Bubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bubble.m; sourceTree = "<group>"; };
 		C61EF34B1A02026A0059FF02 /* Bubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bubble.h; sourceTree = "<group>"; };
 		C628DCC41A14345000A97B21 /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		C6703E9D19F883D40082D1C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C640AF51A1449BA00219D84 /* Icon-60@2x.png */,
 				C65A71A21A0C5ACD008A9766 /* Info.plist */,
 				C6703E9F19F883D40082D1C7 /* main.m */,
 			);
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6703EA919F883D40082D1C7 /* Main.storyboard in Resources */,
+				5C640AF61A1449BA00219D84 /* Icon-60@2x.png in Resources */,
 				C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */,
 				C65A71A11A0C58E8008A9766 /* Default-568h@2x.png in Resources */,
 				C6703EAB19F883D40082D1C7 /* Images.xcassets in Resources */,
