@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Bubble.h"
+#import "LocationManager.h"
+#import "AppDelegate.h"
+#import "MapViewController.h"
 
-@interface ComposeViewController : UIViewController
+
+@interface ComposeViewController : UIViewController {
+    MapViewController *mapController;
+}
+
 
 @property (weak, nonatomic) IBOutlet UITextView *composeField;
+@property (strong, nonatomic) LocationManager *locationManager;
+@property (strong, nonatomic) MapViewController *mapController;
+
 
 - (IBAction)Post:(id)sender;
 

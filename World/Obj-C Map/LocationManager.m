@@ -15,7 +15,7 @@
 
 
 @implementation LocationManager
-
+static LocationManager *locationManager;
 -(id)init {
     self = [super init];
     self.delegate = self;
@@ -23,6 +23,7 @@
         [self requestWhenInUseAuthorization];
     }
     [self startUpdatingLocation];
+    locationManager = self;
     return self;
 }
 

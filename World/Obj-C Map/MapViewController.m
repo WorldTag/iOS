@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "LocationManager.h"
+#import "ComposeViewController.h"
 @import MapKit;
 @import UIKit;
 @import CoreLocation;
@@ -17,21 +18,30 @@
 @end
 
 @implementation MapViewController
+
 @synthesize mapView = _mapView;
 @synthesize locationManager;
+@synthesize tempBubble;
+
+static MapViewController *staticController;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
+    MapViewController *tempController = [[MapViewController alloc] init];
+    tempController->_mapController = self;
     [self.mapView.delegate self];
     [self.mapView setShowsUserLocation:YES];
     self.mapView.userTrackingMode=NO;
     self.locationManager = [AppDelegate getLocationManager];
-    [self performSelector:@selector(updateRegion) withObject:self afterDelay:1.0 ];
+    [self performSelector:@selector(fastUpdateRegion) withObject:self afterDelay:.5 ];
+    if([staticController isEqual:nil])
+        staticController = self;
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
--(IBAction)Send:(UIButton *)sender
+/*-(IBAction)Send:(UIButton *)sender
 {
     if([_textField.text isEqual: @""])
         return;
@@ -40,11 +50,16 @@
     _textField.text = @"";
     [self updateRegion];
     [self.mapView addAnnotation:tbub];
-}
+}*/
 
 -(void)updateRegion {
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([self.locationManager getLocation], 200, 200);
     [self.mapView setRegion:region animated:YES];
+}
+
+-(void)fastUpdateRegion {
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([self.locationManager getLocation], 200, 200);
+    [self.mapView setRegion:region animated:NO];
 }
 
 -(void) printSuccess {
@@ -56,8 +71,13 @@
     // Dispose of any resources that can be recreated.
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+-(void)newPostwithBubble: (Bubble*)newBubble {
+    [self fastUpdateRegion];
+    [self.mapView addAnnotation:newBubble];
+}
+
++(id)getMapViewController {
+    return staticController;
 }
 
 @end

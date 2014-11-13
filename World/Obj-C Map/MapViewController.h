@@ -13,15 +13,16 @@
 
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
+    MapViewController *_mapController;
     MKMapView *mapView;
     MKAnnotationView *selectedAnnotationView;    
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
+@property (weak, nonatomic) Bubble *tempBubble;
 
-- (IBAction)Send:(UIButton *)sender;
-
+-(void)newPostwithBubble: (Bubble*)newBubble;
++(id)getMapViewController;
 @end
 
