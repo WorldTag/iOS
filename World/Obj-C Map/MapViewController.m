@@ -12,11 +12,11 @@
 @import UIKit;
 @import CoreLocation;
 
-@interface ViewController () <CLLocationManagerDelegate>
+@interface MapViewController () <CLLocationManagerDelegate>
 @property (strong, nonatomic) LocationManager *locationManager;
 @end
 
-@implementation ViewController
+@implementation MapViewController
 @synthesize mapView = _mapView;
 @synthesize locationManager;
 

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (ComposeViewController)
+@interface ComposeViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextView *composeField;
+
+- (IBAction)Post:(id)sender;
 
 @end

@@ -43,5 +43,7 @@ NSLocationAlwaysUsageDescription  :  App would like to use your location.</strin
 	<string>Location is required to find out where you are!</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>Opaque blue style</string>
 </dict>
 </plist>

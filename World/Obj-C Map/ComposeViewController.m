@@ -6,8 +6,22 @@
 //  Copyright (c) 2014 Loki. All rights reserved.
 //
 
-#import "UIViewController+ComposeViewController.h"
+#import "ComposeViewController.h"
 
-@implementation UIViewController (ComposeViewController)
+@implementation ComposeViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)Post:(id)sender {
+}
 
 @end

@@ -10,7 +10,6 @@
         <!--Register/Login-->
         <scene sceneID="Ayb-pR-lZx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3FG-tC-W7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Register/Login" id="huj-H6-TFS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tHf-HE-I0O"/>
@@ -42,7 +41,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Dnl-1I-dRd" kind="presentation" id="EA2-s8-BMM"/>
+                                    <segue destination="CgT-Uu-I5p" kind="popoverPresentation" popoverAnchorView="xm5-eP-6sU" id="xJ9-at-7YV">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="map" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byF-VS-bVI">
@@ -66,23 +67,23 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FG-tC-W7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-546" y="381"/>
         </scene>
         <!--Bubbler-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <viewController title="Bubbler" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Bubbler" id="vXZ-lx-hvc" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4by-LD-SBe">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4by-LD-SBe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="CGi-3I-YOo"/>
@@ -97,34 +98,43 @@
                             <constraint firstItem="4by-LD-SBe" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="mMm-Lw-HTU"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Bubbler" id="x5f-Fn-7tI">
-                        <barButtonItem key="rightBarButtonItem" title="Compose" id="2ws-pd-IXC">
+                        <barButtonItem key="rightBarButtonItem" title="Compose" id="baX-KB-lT8">
                             <connections>
-                                <segue destination="tDU-fg-0l7" kind="showDetail" id="oPR-R6-vKI"/>
+                                <segue destination="geT-Kl-uqh" kind="showDetail" id="G1c-9r-0tC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="4by-LD-SBe" id="DoY-dQ-feq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1268" y="261"/>
+            <point key="canvasLocation" x="1016" y="381"/>
         </scene>
-        <!--View Controller-->
+        <!--Compose-->
         <scene sceneID="zZ3-i3-5SG">
             <objects>
-                <viewController id="y3F-fo-chH" sceneMemberID="viewController">
+                <viewController title="Compose" id="y3F-fo-chH" customClass="ComposeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ekk-ab-KTU"/>
                         <viewControllerLayoutGuide type="bottom" id="6ef-Fu-UaA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="duA-Qw-ZfA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhB-yg-bTJ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-FJ-Iaj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -138,48 +148,62 @@
                             <constraint firstItem="zhB-yg-bTJ" firstAttribute="top" secondItem="duA-Qw-ZfA" secondAttribute="top" id="u4u-39-7OU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fUg-t2-Kao"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Blow a Bubble" id="uXg-cO-ZTo">
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="Wdk-8Q-dXy">
+                            <connections>
+                                <action selector="Post:" destination="y3F-fo-chH" id="PVX-gC-Rmn"/>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="OBl-Of-tae"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="composeField" destination="K0Y-FJ-Iaj" id="nwe-mm-XvO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Clr-ZQ-dg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798" y="261"/>
+            <point key="canvasLocation" x="1052" y="1127"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="i1B-1E-kFE">
+        <scene sceneID="gFT-cX-Fc2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dnl-1I-dRd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CgT-Uu-I5p" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sGn-aF-jU0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I7t-5E-7vb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="jlQ-tJ-iLx"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="P1c-oT-btg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EpS-le-8QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmu-ua-b06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456" y="261"/>
+            <point key="canvasLocation" x="204" y="381"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="gzI-XF-8BF">
+        <scene sceneID="jIw-tb-cCZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tDU-fg-0l7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geT-Kl-uqh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dwr-SK-ew1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="heW-jE-DYt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="y3F-fo-chH" kind="relationship" relationship="rootViewController" id="WWG-PO-phh"/>
+                        <segue destination="y3F-fo-chH" kind="relationship" relationship="rootViewController" id="TGV-OJ-pPg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fh1-MP-4iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIz-id-IlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992" y="251"/>
+            <point key="canvasLocation" x="1712" y="381"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OBl-Of-tae"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.67378123615982943" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

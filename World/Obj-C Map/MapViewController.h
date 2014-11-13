@@ -12,7 +12,7 @@
 #import "AppDelegate.h"
 
 
-@interface ViewController : UIViewController <MKMapViewDelegate> {
+@interface MapViewController : UIViewController <MKMapViewDelegate> {
     MKMapView *mapView;
     MKAnnotationView *selectedAnnotationView;    
 }
