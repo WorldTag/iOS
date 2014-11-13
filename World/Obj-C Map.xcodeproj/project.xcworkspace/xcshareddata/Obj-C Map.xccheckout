@@ -12,8 +12,6 @@
 	<dict>
 		<key>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</key>
 		<string>github.com:WorldTag/iOS.git</string>
-		<key>E72E7569B4C06D5D769672533475C040D81B128A</key>
-		<string>https://github.com/WorldTag/iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>World/Obj-C Map.xcodeproj</string>
@@ -21,8 +19,6 @@
 	<dict>
 		<key>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</key>
 		<string>../../..</string>
-		<key>E72E7569B4C06D5D769672533475C040D81B128A</key>
-		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:WorldTag/iOS.git</string>
@@ -32,14 +28,6 @@
 	<string>1B1B8DA405527625EF83F5EDA476FC2CCC80C98B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E72E7569B4C06D5D769672533475C040D81B128A</string>
-			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
