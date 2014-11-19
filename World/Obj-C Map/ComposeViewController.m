@@ -28,9 +28,8 @@
 
 
 
-- (IBAction)Post:(id)sender {
+-(IBAction)Post:(id)sender{
     self.mapController = [MapViewController getMapViewController];
-    
     Bubble *newBubble = [[Bubble alloc] initWithTitle:composeField.text AndCoordinate:[locationManager getLocation]];
     [mapController newPostwithBubble:newBubble];
 }

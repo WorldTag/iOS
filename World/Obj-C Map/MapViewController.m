@@ -37,6 +37,11 @@ static MapViewController *staticController;
     [self performSelector:@selector(fastUpdateRegion) withObject:self afterDelay:.5 ];
     if([staticController isEqual:nil])
         staticController = self;
+    self.navigationItem.backBarButtonItem =
+    [[UIBarButtonItem alloc] initWithTitle:@"Post"
+                                      style:UIBarButtonItemStyleBordered
+                                     target:nil
+                                     action:nil];
 
     // Do any additional setup after loading the view, typically from a nib.
 }

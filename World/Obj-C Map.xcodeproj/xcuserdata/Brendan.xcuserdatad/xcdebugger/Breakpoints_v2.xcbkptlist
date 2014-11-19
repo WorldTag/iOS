@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Obj-C Map/MapViewController.m"
-            timestampString = "437538294.210932"
+            filePath = "Obj-C Map/ComposeViewController.m"
+            timestampString = "437540423.378353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "-newPostwithBubble:"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-Post:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
