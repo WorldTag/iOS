@@ -10,19 +10,21 @@
 #import "Bubble.h"
 #import "LocationManager.h"
 #import "AppDelegate.h"
-#import "MapViewController.h"
 
+@class ComposeViewController;
 
-@interface ComposeViewController : UIViewController {
-    MapViewController *mapController;
-}
+@protocol newBubbleCreationDelegate <NSObject>
 
+-(void)composeBubble:(ComposeViewController *)controller didFinishBlowingBubble:(NSString *)bubbleText;
+
+@end
+
+@interface ComposeViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *composeField;
 @property (strong, nonatomic) LocationManager *locationManager;
-@property (strong, nonatomic) MapViewController *mapController;
+@property (nonatomic, weak) id <newBubbleCreationDelegate> delegate;
 
-
-- (IBAction)Post:(id)sender;
+- (IBAction)post:(id)sender;
 
 @end

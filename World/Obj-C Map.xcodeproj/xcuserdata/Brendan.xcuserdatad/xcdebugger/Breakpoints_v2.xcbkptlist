@@ -19,13 +19,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Obj-C Map/ComposeViewController.m"
-            timestampString = "437540423.378353"
+            filePath = "Obj-C Map/MapViewController.m"
+            timestampString = "438060947.353138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "-Post:"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-composeBubble:didFinishBlowingBubble:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Obj-C Map/ComposeViewController.m"
+            timestampString = "438061275.231695"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-post:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

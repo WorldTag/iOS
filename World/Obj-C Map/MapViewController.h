@@ -7,22 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
-#import "Bubble.h"
-#import "AppDelegate.h"
+#import "ComposeViewController.h"
+#import "LocationManager.h"
 
+@class MapViewController;
 
-@interface MapViewController : UIViewController <MKMapViewDelegate> {
+@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate> {
     MapViewController *_mapController;
     MKMapView *mapView;
-    MKAnnotationView *selectedAnnotationView;    
+    MKAnnotationView *selectedAnnotationView;
 }
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
 @property (weak, nonatomic) Bubble *tempBubble;
 
--(void)newPostwithBubble: (Bubble*)newBubble;
-+(id)getMapViewController;
 @end
-

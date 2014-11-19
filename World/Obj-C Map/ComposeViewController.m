@@ -12,12 +12,10 @@
 
 @synthesize locationManager;
 @synthesize composeField;
-@synthesize mapController;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.locationManager = [AppDelegate getLocationManager];
-    self.mapController = [MapViewController getMapViewController];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,10 +25,10 @@
 }
 
 
-
--(IBAction)Post:(id)sender{
-    self.mapController = [MapViewController getMapViewController];
-    Bubble *newBubble = [[Bubble alloc] initWithTitle:composeField.text AndCoordinate:[locationManager getLocation]];
-    [mapController newPostwithBubble:newBubble];
+- (IBAction)post:(id)sender {
+    NSString *temp = composeField.text;
+    [self.delegate composeBubble:self didFinishBlowingBubble:self.composeField.text];
+    [self.navigationController popViewControllerAnimated:NO];
 }
+
 @end

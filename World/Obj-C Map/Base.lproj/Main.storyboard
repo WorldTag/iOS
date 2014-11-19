@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="huj-H6-TFS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="huj-H6-TFS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -127,11 +127,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-FJ-Iaj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-FJ-Iaj">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" id="7rz-ED-P0P"/>
-                                    <constraint firstAttribute="height" id="GDw-fD-8gX"/>
+                                    <constraint firstAttribute="width" id="hbc-5S-LrA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -144,20 +143,30 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="y3F-fo-chH" id="4nN-eq-Jcn"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="zhB-yg-bTJ" secondAttribute="trailing" id="1be-YO-cxU"/>
-                            <constraint firstItem="K0Y-FJ-Iaj" firstAttribute="top" secondItem="duA-Qw-ZfA" secondAttribute="topMargin" constant="-64" id="7EH-jj-QbJ"/>
-                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="bottom" secondItem="6ef-Fu-UaA" secondAttribute="top" id="9PR-Eg-AM3"/>
-                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="leading" secondItem="duA-Qw-ZfA" secondAttribute="leading" id="nUT-9T-DAY"/>
-                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="top" secondItem="duA-Qw-ZfA" secondAttribute="top" id="u4u-39-7OU"/>
+                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="leading" secondItem="K0Y-FJ-Iaj" secondAttribute="leading" id="8YW-iD-Nf4"/>
+                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="leading" secondItem="duA-Qw-ZfA" secondAttribute="leading" id="9I2-Ul-tfQ"/>
+                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="top" secondItem="K0Y-FJ-Iaj" secondAttribute="top" id="aQg-M3-eL0"/>
+                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="top" secondItem="Ekk-ab-KTU" secondAttribute="bottom" id="fH1-74-uvZ"/>
+                            <constraint firstAttribute="trailing" secondItem="zhB-yg-bTJ" secondAttribute="trailing" id="fkV-4D-3Ko"/>
+                            <constraint firstItem="K0Y-FJ-Iaj" firstAttribute="bottom" secondItem="Ekk-ab-KTU" secondAttribute="bottom" id="lfb-6v-vKT"/>
+                            <constraint firstItem="zhB-yg-bTJ" firstAttribute="bottom" secondItem="6ef-Fu-UaA" secondAttribute="top" id="sU7-Zh-oi5"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Blow a Bubble" id="uXg-cO-ZTo">
-                        <barButtonItem key="backBarButtonItem" title="Post" id="ht6-eq-EnJ"/>
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="ht6-eq-EnJ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="44p-HP-wBl">
+                            <connections>
+                                <action selector="post:" destination="y3F-fo-chH" id="8kd-r4-Yae"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="composeField" destination="K0Y-FJ-Iaj" id="nwe-mm-XvO"/>
