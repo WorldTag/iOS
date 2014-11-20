@@ -23,6 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *composeField;
 @property (nonatomic, weak) id <newBubbleCreationDelegate> delegate;
+@property (weak, nonatomic) LocationManager *locationManager;
 
 - (IBAction)post:(id)sender;
 

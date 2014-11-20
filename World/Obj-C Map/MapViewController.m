@@ -29,9 +29,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ComposeViewController *controller = (ComposeViewController *)segue.destinationViewController;
     controller.delegate = self;
+    [self.locationManager startUpdatingLocation];
+
 }
 
 -(void)composeBubble:(ComposeViewController *)controller didFinishBlowingBubble:(NSString *)bubbleText {
+    [self.locationManager startUpdatingLocation];
     [self updateRegion];
     Bubble *tbub = [[Bubble alloc]initWithTitle:bubbleText AndCoordinate:locationManager.location.coordinate];
     [self.mapView addAnnotation:tbub];

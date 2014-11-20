@@ -23,7 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
-@property (strong, nonatomic) LocationManager *locationManager;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 
 @end

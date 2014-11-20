@@ -11,9 +11,12 @@
 @implementation ComposeViewController
 
 @synthesize composeField;
+@synthesize locationManager;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    locationManager = [AppDelegate getLocationManager];
+    [locationManager startUpdatingLocation];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -25,7 +28,7 @@
 
 - (IBAction)post:(id)sender {
     NSString *temp = composeField.text;
-    [self.delegate composeBubble:self didFinishBlowingBubble:self.composeField.text];
+    [self.delegate composeBubble:self didFinishBlowingBubble:temp];
     [self.navigationController popViewControllerAnimated:NO];
 }
 
