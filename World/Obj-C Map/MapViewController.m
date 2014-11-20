@@ -10,7 +10,7 @@
 
 @implementation MapViewController
 
-@synthesize mapView = _mapView;
+@synthesize mapView = mapView;
 @synthesize locationManager;
 
 - (void)viewDidLoad {
@@ -36,7 +36,7 @@
 -(void)composeBubble:(ComposeViewController *)controller didFinishBlowingBubble:(NSString *)bubbleText {
     [self.locationManager startUpdatingLocation];
     [self updateRegion];
-    Bubble *tbub = [[Bubble alloc]initWithTitle:bubbleText AndCoordinate:locationManager.location.coordinate];
+    Bubble *tbub = [[Bubble alloc]initWithTitle:bubbleText AndCoordinate:[locationManager getLocation]];
     [self.mapView addAnnotation:tbub];
 }
 
@@ -48,10 +48,6 @@
 -(void)fastUpdateRegion {
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(self.locationManager.location.coordinate, 100, 100);
     [self.mapView setRegion:region animated:NO];
-}
-
--(void) printSuccess {
-    NSLog(@"yolo");
 }
 
 - (void)didReceiveMemoryWarning {

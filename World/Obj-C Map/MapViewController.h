@@ -15,15 +15,11 @@
 
 @class MapViewController;
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate, CLLocationManagerDelegate> {
-    MapViewController *_mapController;
-    MKMapView *mapView;
-    MKAnnotationView *selectedAnnotationView;
-}
+@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate, CLLocationManagerDelegate> 
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
-@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) LocationManager *locationManager;
 
 
 @end

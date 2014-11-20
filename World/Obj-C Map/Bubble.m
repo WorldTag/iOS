@@ -11,14 +11,14 @@
 
 @implementation Bubble
 
-@synthesize coordinate = _coordinate;
-@synthesize title = _title;
+@synthesize coordinate;
+@synthesize title;
 
--(id) initWithTitle:(NSString *)title AndCoordinate:(CLLocationCoordinate2D)coordinate
+-(id) initWithTitle:(NSString *)text AndCoordinate:(CLLocationCoordinate2D)location
 {
     self = [super init];
-    _title = title;
-    _coordinate = coordinate;
+    self.title = text;
+    self.coordinate = location;
     return self;
 }
 

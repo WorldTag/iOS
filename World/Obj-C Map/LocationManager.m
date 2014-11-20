@@ -30,7 +30,12 @@ static LocationManager *locationManager;
 }
 
 -(CLLocationCoordinate2D)getLocation {
+    NSNumber *lat = [NSNumber numberWithDouble:self.location.coordinate.latitude];
+    NSNumber *longi = [NSNumber numberWithDouble:self.location.coordinate.longitude];
+    NSLog([lat stringValue]);
+    NSLog([longi stringValue]);
     return self.location.coordinate;
+
 }
 
 @end
