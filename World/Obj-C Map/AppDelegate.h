@@ -13,8 +13,6 @@
 
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) CLLocationManager *locationManager;
-
 +(id)getLocationManager;
 
 @end

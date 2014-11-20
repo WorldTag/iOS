@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ComposeViewController.h"
 #import "LocationManager.h"
+@import MapKit;
+@import UIKit;
+@import CoreLocation;
 
 @class MapViewController;
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate> {
+@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate, CLLocationManagerDelegate> {
     MapViewController *_mapController;
     MKMapView *mapView;
     MKAnnotationView *selectedAnnotationView;
@@ -20,6 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *Send;
-@property (weak, nonatomic) Bubble *tempBubble;
+@property (strong, nonatomic) LocationManager *locationManager;
+
 
 @end

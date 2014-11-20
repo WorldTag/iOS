@@ -22,7 +22,6 @@
 @interface ComposeViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *composeField;
-@property (strong, nonatomic) LocationManager *locationManager;
 @property (nonatomic, weak) id <newBubbleCreationDelegate> delegate;
 
 - (IBAction)post:(id)sender;

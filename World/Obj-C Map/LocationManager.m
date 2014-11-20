@@ -15,7 +15,9 @@
 
 
 @implementation LocationManager
+
 static LocationManager *locationManager;
+
 -(id)init {
     self = [super init];
     self.delegate = self;

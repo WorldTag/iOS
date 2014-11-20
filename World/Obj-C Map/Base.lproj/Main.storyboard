@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2911" y="410"/>
+            <point key="canvasLocation" x="2964" y="414"/>
         </scene>
         <!--Compose-->
         <scene sceneID="zZ3-i3-5SG">
@@ -169,7 +169,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="composeField" destination="K0Y-FJ-Iaj" id="nwe-mm-XvO"/>
+                        <outlet property="composeField" destination="zhB-yg-bTJ" id="gkU-zQ-ifb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Clr-ZQ-dg6" userLabel="First Responder" sceneMemberID="firstResponder"/>

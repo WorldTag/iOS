@@ -10,12 +10,10 @@
 
 @implementation ComposeViewController
 
-@synthesize locationManager;
 @synthesize composeField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.locationManager = [AppDelegate getLocationManager];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

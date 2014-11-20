@@ -9,8 +9,7 @@
 #import "AppDelegate.h"
 #import "MapViewController.h"
 
-@interface AppDelegate ()
-@end
+@class AppDelegate;
 
 @implementation AppDelegate {
     UIScrollView *scrollView;
@@ -23,6 +22,7 @@ static LocationManager *locationManager;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     locationManager = [[LocationManager alloc] init];
+    [locationManager startUpdatingLocation];
     return YES;
 }
 
