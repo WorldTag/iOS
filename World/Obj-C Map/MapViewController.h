@@ -9,13 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "ComposeViewController.h"
 #import "LocationManager.h"
+#import "ServerManager.h"
 @import MapKit;
 @import UIKit;
 @import CoreLocation;
 
 @class MapViewController;
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate, CLLocationManagerDelegate> 
+@interface MapViewController : UIViewController <MKMapViewDelegate, newBubbleCreationDelegate, CLLocationManagerDelegate, ServerManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *Send;

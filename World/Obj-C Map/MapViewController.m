@@ -23,7 +23,9 @@
     [self performSelector:@selector(fastUpdateRegion) withObject:self afterDelay:.5 ];
     self.navigationItem.backBarButtonItem =
     [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:nil action:nil];
-    // Do any additional setup after loading the view, typically from a nib.
+    ServerManager *server = [[ServerManager alloc]init];
+    server.delegate = self;
+    [server getBubbles];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -32,7 +34,7 @@
     [self.locationManager startUpdatingLocation];
 
 }
-
+  
 -(void)composeBubble:(ComposeViewController *)controller didFinishBlowingBubble:(NSString *)bubbleText {
     [self.locationManager startUpdatingLocation];
     [self updateRegion];
@@ -60,6 +62,10 @@
     [self.mapView addAnnotation:newBubble];
 }
 
-
+-(void)addAnnotationsToMapWithArray:(NSMutableArray *)array {
+    for (Bubble *b in array) {
+        [self.mapView addAnnotation:b];
+    }
+}
 
 @end

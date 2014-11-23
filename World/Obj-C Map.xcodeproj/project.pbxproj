@@ -19,6 +19,7 @@
 		C6703EAE19F883D40082D1C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6703EAC19F883D40082D1C7 /* LaunchScreen.xib */; };
 		C6703EC419F8854B0082D1C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6703EC319F8854B0082D1C7 /* MapKit.framework */; };
 		C6AB70DF1A12F7A200380001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AB70DE1A12F7A200380001 /* AppDelegate.m */; };
+		C6C1F2F01A21A16E0013918D /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C1F2EF1A21A16E0013918D /* ServerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		C6703EC319F8854B0082D1C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C6AB70DD1A12F7A200380001 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6AB70DE1A12F7A200380001 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6C1F2EE1A21A16E0013918D /* ServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
+		C6C1F2EF1A21A16E0013918D /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				C628DCC51A14345000A97B21 /* ComposeViewController.m */,
 				C61EF34B1A02026A0059FF02 /* Bubble.h */,
 				C61EF3491A02025C0059FF02 /* Bubble.m */,
+				C6C1F2EE1A21A16E0013918D /* ServerManager.h */,
+				C6C1F2EF1A21A16E0013918D /* ServerManager.m */,
 				C65842861A1308E900A4CFB9 /* LocationManager.h */,
 				C65842871A1308F500A4CFB9 /* LocationManager.m */,
 				C6703EA719F883D40082D1C7 /* Main.storyboard */,
@@ -226,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C628DCC61A14345000A97B21 /* ComposeViewController.m in Sources */,
+				C6C1F2F01A21A16E0013918D /* ServerManager.m in Sources */,
 				C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */,
 				C65842881A1308F500A4CFB9 /* LocationManager.m in Sources */,
 				C6703EA019F883D40082D1C7 /* main.m in Sources */,
