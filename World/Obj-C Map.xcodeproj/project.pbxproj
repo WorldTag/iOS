@@ -10,7 +10,6 @@
 		5C78D8991A1451AB00E403B5 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C78D8981A1451AB00E403B5 /* Icon-60@2x.png */; };
 		C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = C61EF3491A02025C0059FF02 /* Bubble.m */; };
 		C628DCC61A14345000A97B21 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C628DCC51A14345000A97B21 /* ComposeViewController.m */; };
-		C65842881A1308F500A4CFB9 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C65842871A1308F500A4CFB9 /* LocationManager.m */; };
 		C65A71A11A0C58E8008A9766 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65A71A01A0C58E8008A9766 /* Default-568h@2x.png */; };
 		C6703EA019F883D40082D1C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703E9F19F883D40082D1C7 /* main.m */; };
 		C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6703EA519F883D40082D1C7 /* MapViewController.m */; };
@@ -38,8 +37,6 @@
 		C61EF34B1A02026A0059FF02 /* Bubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bubble.h; sourceTree = "<group>"; };
 		C628DCC41A14345000A97B21 /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		C628DCC51A14345000A97B21 /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
-		C65842861A1308E900A4CFB9 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		C65842871A1308F500A4CFB9 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		C65A71A01A0C58E8008A9766 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C65A71A21A0C5ACD008A9766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6703E9A19F883D40082D1C7 /* Obj-C Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obj-C Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,8 +105,6 @@
 				C61EF3491A02025C0059FF02 /* Bubble.m */,
 				C6C1F2EE1A21A16E0013918D /* ServerManager.h */,
 				C6C1F2EF1A21A16E0013918D /* ServerManager.m */,
-				C65842861A1308E900A4CFB9 /* LocationManager.h */,
-				C65842871A1308F500A4CFB9 /* LocationManager.m */,
 				C6703EA719F883D40082D1C7 /* Main.storyboard */,
 				C6703EAA19F883D40082D1C7 /* Images.xcassets */,
 				C6703EAC19F883D40082D1C7 /* LaunchScreen.xib */,
@@ -233,7 +228,6 @@
 				C628DCC61A14345000A97B21 /* ComposeViewController.m in Sources */,
 				C6C1F2F01A21A16E0013918D /* ServerManager.m in Sources */,
 				C6703EA619F883D40082D1C7 /* MapViewController.m in Sources */,
-				C65842881A1308F500A4CFB9 /* LocationManager.m in Sources */,
 				C6703EA019F883D40082D1C7 /* main.m in Sources */,
 				C61EF34A1A02025C0059FF02 /* Bubble.m in Sources */,
 				C6AB70DF1A12F7A200380001 /* AppDelegate.m in Sources */,

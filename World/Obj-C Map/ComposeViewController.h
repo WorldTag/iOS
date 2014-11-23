@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Bubble.h"
-#import "LocationManager.h"
 #import "AppDelegate.h"
 
 @class ComposeViewController;
@@ -23,7 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *composeField;
 @property (nonatomic, weak) id <newBubbleCreationDelegate> delegate;
-@property (weak, nonatomic) LocationManager *locationManager;
+@property (weak, nonatomic) CLLocationManager *locationManager;
 
 - (IBAction)post:(id)sender;
 

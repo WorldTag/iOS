@@ -17,11 +17,14 @@
 
 @synthesize window;
 
-static LocationManager *locationManager;
+static CLLocationManager *locationManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    locationManager = [[LocationManager alloc] init];
+    locationManager = [[CLLocationManager alloc]init];
+    if([locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [locationManager requestWhenInUseAuthorization];
+    }
     [locationManager startUpdatingLocation];
     return YES;
 }

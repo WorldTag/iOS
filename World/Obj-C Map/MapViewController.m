@@ -26,6 +26,7 @@
     ServerManager *server = [[ServerManager alloc]init];
     server.delegate = self;
     [server getBubbles];
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -38,7 +39,7 @@
 -(void)composeBubble:(ComposeViewController *)controller didFinishBlowingBubble:(NSString *)bubbleText {
     [self.locationManager startUpdatingLocation];
     [self updateRegion];
-    Bubble *tbub = [[Bubble alloc]initWithTitle:bubbleText AndCoordinate:[locationManager getLocation]];
+    Bubble *tbub = [[Bubble alloc]initWithTitle:bubbleText AndCoordinate:locationManager.location.coordinate];
     [self.mapView addAnnotation:tbub];
 }
 
