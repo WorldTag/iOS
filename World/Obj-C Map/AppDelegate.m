@@ -18,7 +18,7 @@
 @synthesize window;
 
 static CLLocationManager *locationManager;
-static ServerManager *serverManager;
+//static ServerManager *serverManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -27,7 +27,7 @@ static ServerManager *serverManager;
         [locationManager requestWhenInUseAuthorization];
     }
     [locationManager startUpdatingLocation];
-    serverManager = [[ServerManager alloc]initWithDefaultConfig];
+    //serverManager = [[ServerManager alloc]initWithDefaultConfig];
     return YES;
 }
 

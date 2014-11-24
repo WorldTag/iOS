@@ -17,13 +17,14 @@
 
 @interface ServerManager : NSObject <NSURLSessionDelegate>
 
-@property (nonatomic, weak) id <ServerManagerDelegate> delegate;
-@property (nonatomic, weak) NSURLSession *session;
-@property (nonatomic, weak) NSString *baseURL;
+@property (nonatomic, retain) id <ServerManagerDelegate> delegate;
+@property (nonatomic, retain) NSURLSession *session;
+@property (nonatomic, retain) NSString *baseURL;
 
 -(void)getBubbles;
 -(id)initWithDefaultConfig;
 -(BOOL)signUpWithUsername:(NSString *)username andPassword:(NSString *)password;
+-(BOOL)signOut;
 
 
 @end

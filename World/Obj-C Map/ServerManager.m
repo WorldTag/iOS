@@ -22,7 +22,8 @@
 }
 
 -(void)getBubbles{
-    NSURL *url = [NSURL URLWithString:[baseURL stringByAppendingString:@"bubbles"]];
+    NSURL *url = [baseURL copy];
+    url = [NSURL URLWithString:[baseURL stringByAppendingString:@"bubbles"]];
     
     NSURLSessionDownloadTask* task = [session downloadTaskWithURL:url completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         NSData *jsonResult = [NSData dataWithContentsOfURL:location];
@@ -38,7 +39,7 @@
 }
 
 -(BOOL)signUpWithUsername:(NSString *)username andPassword:(NSString *)password {
-    NSURL *url = [NSURL URLWithString:[baseURL stringByAppendingString:@"signup"]];
+    NSURL *url = [NSURL URLWithString:[baseURL stringByAppendingString:@"signup/"]];
     NSDictionary *tmp = [[NSDictionary alloc] initWithObjectsAndKeys: (NSString*)@"username", username, (NSString *)@"password", password, nil];
     NSData *postData = [NSJSONSerialization dataWithJSONObject:tmp options:0 error:nil];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -46,8 +47,22 @@
     NSURLResponse *requestResponse;
     NSData *requestHandler = [NSURLConnection sendSynchronousRequest:request returningResponse:&requestResponse error:nil];
     NSString *requestReply = [[NSString alloc] initWithBytes:[requestHandler bytes] length:[requestHandler length] encoding:NSASCIIStringEncoding];
+    NSLog(requestReply);
     if([requestReply isEqual:(@"failed")])
        return false;
+    return true;
+}
+
+-(BOOL)signOut {
+    NSURL *url = [NSURL URLWithString:[baseURL stringByAppendingString:@"signout/"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPBody:nil];
+    NSURLResponse *requestResponse;
+    NSData *requestHandler = [NSURLConnection sendSynchronousRequest:request returningResponse:&requestResponse error:nil];
+    NSString *requestReply = [[NSString alloc] initWithBytes:[requestHandler bytes] length:[requestHandler length] encoding:NSASCIIStringEncoding];
+    if([requestReply isEqual:(@"failed")])
+        return false;
+    NSLog(requestReply);
     return true;
 }
 

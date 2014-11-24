@@ -3,15 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[ServerManager getBubbles]:ServerManager.m">
-      </ContextState>
-      <ContextState
          contextName = "__27-[ServerManager getBubbles]_block_invoke:ServerManager.m">
          <PersistentStrings>
             <PersistentString
                value = "()[0]">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ServerManager getBubbles]:ServerManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ServerManager signUpWithUsername:andPassword:]:ServerManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(NSData *)postData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate application:didFinishLaunchingWithOptions:]:AppDelegate.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

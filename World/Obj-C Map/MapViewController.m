@@ -23,9 +23,12 @@
     [self performSelector:@selector(fastUpdateRegion) withObject:self afterDelay:.5 ];
     self.navigationItem.backBarButtonItem =
     [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:nil action:nil];
-    ServerManager *server = [[ServerManager alloc]init];
+    ServerManager *server = [[ServerManager alloc]initWithDefaultConfig];
     server.delegate = self;
     [server getBubbles];
+    if ([server signUpWithUsername:@"yolo" andPassword:@"pass"])
+        NSLog(@"sucess");
+    [server signOut];
 
 }
 
