@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapViewController.h"
+#import "ServerManager.h"
 @import CoreLocation;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

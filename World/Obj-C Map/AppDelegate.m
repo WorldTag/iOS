@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MapViewController.h"
+
 
 @class AppDelegate;
 
@@ -18,6 +18,7 @@
 @synthesize window;
 
 static CLLocationManager *locationManager;
+static ServerManager *serverManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -26,6 +27,7 @@ static CLLocationManager *locationManager;
         [locationManager requestWhenInUseAuthorization];
     }
     [locationManager startUpdatingLocation];
+    serverManager = [[ServerManager alloc]initWithDefaultConfig];
     return YES;
 }
 

@@ -35,8 +35,7 @@
     double lat = [[dictionary valueForKey:@"latitdue"] doubleValue];
     double lon = [[dictionary valueForKey:@"longitude"] doubleValue];
     coordinate = CLLocationCoordinate2DMake(lat, lon);
-    
-    
+
     return self;
 }
 
