@@ -17,6 +17,8 @@
     [super viewDidLoad];
     locationManager = [AppDelegate getLocationManager];
     [locationManager startUpdatingLocation];
+    [composeField becomeFirstResponder];
+    //composeField.textColor = [UIColor cyanColor];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
